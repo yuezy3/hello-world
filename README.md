@@ -2,8 +2,8 @@
 
 ##some markdown 
 
-* or _ around words for *italic*  
-** or __ around words for __bold__  
+_ or * around words for *italic*  
+__ or ** around words for __bold__  
 
 use blank line or two spaces after line's end to start
 new paragraphy.

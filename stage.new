@@ -1,0 +1,5 @@
+git add filename
+or
+git add --all
+to add new files to staging area, than those files are
+call be tracked.

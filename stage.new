@@ -3,3 +3,17 @@ or
 git add --all
 to add new files to staging area, than those files are
 call be tracked.
+
+How to Unstage?
+git reset HEAD <file> ...
+HEAD here refer to last commit in current branch.
+note that <file> still reserve their changes.
+If you want to discard the changes.(staged file -> unstaged and unchanged)
+git checkout -- <file>
+
+git diff
+to see unstaged change to last commitment.
+
+if you staged, then use
+git diff --staged
+instead.

@@ -17,3 +17,16 @@ to see unstaged change to last commitment.
 if you staged, then use
 git diff --staged
 instead.
+
+If you found that last commitment you just did are wrong, like forget a file to
+commit, you can undo last commitment, back to status that just before that commitment
+by runing:
+git reset --soft HEAD^
+Then you can find everthing back to staged.
+
+git reset --hard HEAD^
+like the pervious one but discard the changes also.
+
+ONE LAST WORDS: DO NOT USING CHANGE HISTORY COMMAND LIKE
+git reset --soft HEAD^
+ONECE YOU PUSH.

@@ -1,0 +1,37 @@
+git remote command will let you take local repository change synchronously
+to the remote repository.
+
+Assume that you have an repository on github, the address will like:
+git@github.com:yuezy3/hello-world.git    //using ssh key to access
+or:
+https://github.com/yuezy3/hello-world.git
+if you take the ".git" part off the url above, then you just got the address of
+your repository, access it in browser to see it.
+
+To push or pull data from an remote repository, first you need to set the remote
+repository's name and address （ which make sense because you need let
+git to know where to find the repository)
+
+Using command:
+git remote add origin https://github.com/yuezy3/hello-world.git
+in which, origin is an name you give to the repository.
+
+using command:
+git remote -v
+to list all the repository locally recognized.
+
+To push local repository to remote server, using:
+git push -u origin master
+origin is the name, and master is local branch. "-u" here will let you
+do "git push" next time without "origin master" part.
+
+git remote rm <name>  // remove name
+git pull             // reverse to get push.
+
+
+Donnot run those command after push:
+git reset --soft HEAD^
+git commit --amend -m "new commit message"
+git reset --hard HEAD^
+git reset --hard HEAD^^
+Because this will change history.
